@@ -1,42 +1,193 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>指数示例演示</title>
-    <!-- 引入刚刚下载的 ECharts 文件 -->
-    <script src="js/echarts.min.js"></script>
+    <title>LoginPage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/loginpage/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/loginpage/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
   </head>
   <body>
-    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
-    <div id="main" style="width: 600px;height:400px;"></div>
-    <script type="text/javascript">
-      // 基于准备好的dom，初始化echarts实例
-      var myChart = echarts.init(document.getElementById('main'));
+    <div id="base" class="">
 
-      // 指定图表的配置项和数据
-      var option = {
-        title: {
-          text: '指数示例演示'
-        },
-        tooltip: {},
-        legend: {
-          data: ['销量']
-        },
-        xAxis: {
-          data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-        },
-        yAxis: {},
-        series: [
-          {
-            name: '销量',
-            type: 'bar',
-            data: [5, 20, 36, 10, 10, 20]
-          }
-        ]
-      };
+      <!-- 背景 (动态面板) -->
+      <div id="u0" class="ax_default" data-label="背景">
+        <div id="u0_state0" class="panel_state" data-label="State1" style="">
+          <div id="u0_state0_content" class="panel_state_content">
+          </div>
+        </div>
+      </div>
 
-      // 使用刚指定的配置项和数据显示图表。
-      myChart.setOption(option);
-    </script>
+      <!-- 登录面板 (动态面板) -->
+      <div id="u1" class="ax_default" data-label="登录面板">
+        <div id="u1_state0" class="panel_state" data-label="State1" style="">
+          <div id="u1_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u2" class="ax_default _默认样式">
+              <div id="u2_div" class=""></div>
+              <div id="u2_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u3" class="ax_default _默认样式">
+              <img id="u3_img" class="img " src="images/loginpage/u3.svg"/>
+              <div id="u3_text" class="text ">
+                <p><span>培训管理系统</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u4" class="ax_default _默认样式">
+              <div id="u4_div" class=""></div>
+              <div id="u4_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- 登录按纽 (矩形) -->
+            <div id="u5" class="ax_default _默认样式" data-label="登录按纽" selectiongroup="按纽组-9">
+              <div id="u5_div" class=""></div>
+              <div id="u5_text" class="text ">
+                <p><span>登录</span></p>
+              </div>
+            </div>
+
+            <!-- 输入框 (组合) -->
+            <div id="u6" class="ax_default" data-label="输入框" data-left="25" data-top="230" data-width="300" data-height="50">
+
+              <!-- 边框 (矩形) -->
+              <div id="u7" class="ax_default _默认样式" data-label="边框">
+                <img id="u7_img" class="img " src="images/loginpage/边框_u7.svg"/>
+                <div id="u7_text" class="text ">
+                  <p><span></span></p>
+                </div>
+              </div>
+
+              <!-- 密码 (文本框) -->
+              <div id="u8" class="ax_default _默认样式" data-label="密码">
+                <div id="u8_div" class=""></div>
+                <input id="u8_input" type="password" value="****************" class="u8_input" maxlength="20"/>
+              </div>
+
+              <!-- 清除 (矩形) -->
+              <div id="u9" class="ax_default _默认样式 ax_default_hidden" data-label="清除" style="display:none; visibility: hidden">
+                <div id="u9_div" class=""></div>
+                <div id="u9_text" class="text ">
+                  <p><span></span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 输入框 (组合) -->
+            <div id="u10" class="ax_default" data-label="输入框" data-left="25" data-top="160" data-width="300" data-height="50">
+
+              <!-- 边框 (矩形) -->
+              <div id="u11" class="ax_default _默认样式" data-label="边框">
+                <img id="u11_img" class="img " src="images/loginpage/边框_u7.svg"/>
+                <div id="u11_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- 用户名 (文本框) -->
+              <div id="u12" class="ax_default _默认样式" data-label="用户名">
+                <div id="u12_div" class=""></div>
+                <input id="u12_input" type="text" value="admin" class="u12_input" maxlength="20"/>
+              </div>
+
+              <!-- 清除 (矩形) -->
+              <div id="u13" class="ax_default _默认样式 ax_default_hidden" data-label="清除" style="display:none; visibility: hidden">
+                <div id="u13_div" class=""></div>
+                <div id="u13_text" class="text ">
+                  <p><span></span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (形状) -->
+            <div id="u14" class="ax_default _默认样式">
+              <img id="u14_img" class="img " src="images/loginpage/u14.svg"/>
+              <div id="u14_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (形状) -->
+            <div id="u15" class="ax_default _默认样式">
+              <img id="u15_img" class="img " src="images/loginpage/u15.svg"/>
+              <div id="u15_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (组合) -->
+            <div id="u16" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底部版权 (动态面板) -->
+      <div id="u17" class="ax_default" data-label="底部版权">
+        <div id="u17_state0" class="panel_state" data-label="State1" style="">
+          <div id="u17_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (底部版权) -->
+
+            <!-- Unnamed (矩形) -->
+            <div id="u19" class="ax_default _默认样式">
+              <img id="u19_img" class="img " src="images/loginpage/u19.svg"/>
+              <div id="u19_text" class="text ">
+                <p><span style="color:#555555;">【此界面仅供参考，方便用户提出修改意见。以实际界面为准】</span></p><p><span style="color:#CCCCCC;"><br></span></p>
+              </div>
+            </div>
+            <div id="u18" style="display:none; visibility:hidden;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
   </body>
 </html>

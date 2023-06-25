@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>公司级-员工属性分值分布图</title>
+
+    <script src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/scatter30.js"></script>
+
+</head>
+
+<body>
+
+
+     <nav style="text-align:left">
+        <a href="/admin/visual/list" target="_blank">首页列表</a>
+        <a href="/admin/visual/indexlist" target="_blank">指数列表</a>
+        <a href="/admin/visual/datalist" target="_blank">数据列表</a>
+        <a href="/admin/visual/scatter30" target="_blank">项目与指数</a>
+        <a href="/admin/visual/scatter" target="_blank">属性分布</a>
+        <a href="/admin/visual/scatter20" target="_blank">气泡图</a>
+        <a href="/api/api/radar" target="_blank">雷达图</a>
+        <a href="/admin/visual/V_indexpie" target="_blank">指数构成</a>
+    </nav>
+    <!--//属性  年龄段，入职年份，学历，职称，职能级别 ，技能等级，
+    //分数（总分，s1, s2,s3,s4, 12个细目数量 -->
+    <header>
+
+        <h2 style="text-align:center">全周期位置分布排名图</h2>
+
+    </header>
+    <section>
+
+        <div>
+            <select id="val1">
+                <option value="class6">入职年限</option>
+            </select>
+            <select id="val2">
+
+                <option value="s1_score" selected>发展潜力</option>
+                <option value="s2_score">创新能力</option>
+                <option value="s3_score">管理素养</option>
+                <option value="s4_score">技术技能</option>
+                <option value="s0_score">成长积点</option>
+            </select>
+            <select id="val3">
+                <option value="s0_score">成长积点</option>
+
+            </select>
+            <select id="val4">
+                <option value="20" selected>第1-20名</option>
+                <option value="40">第21-40名</option>
+                <option value="60">第41-60名</option>
+                <option value="80">第61-80名</option>
+                <option value="0">全部</option>
+            </select>
+
+
+            <input type="submit" value="显示" onclick="BtnSelect()" />
+
+            <a onclick="btn4_click()" title="图表说明"><img src="/static/admin/home/hr/images/shuoming2.png" width="24" height="24" align="top"></a>
+        </div>
+        <div>
+            <div>
+                <span></span>
+                <br />
+
+                <div id="scatter" style="float:left;width: 40%;height:850px"></div>
+            </div>
+            <div>
+                <div id="stack1" style="float:left;width:60%;height:850px"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        getAllData();
+
+        function btn4_click() {
+            layer.open({
+                title: '图表说明'
+                , content: '同时显示员工之间的排名和各个细目的指数得分情况<br>可查看排名段的员工细目得分的具体情况<br>很多时候是靠某几项的大量得分' +
+                    '<br>左侧不同颜色线划分不同分数的员工区间<br>左侧图右上角可以局部选区放大'
+            });
+        }
+    </script>
+</body>
+</html>
